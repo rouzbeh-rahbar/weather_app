@@ -32,10 +32,3 @@ const  getCity = async (city) => {
 
 };
 
-/* ino pak kon badan
-getCity('manchester').then(data => {
-    return getWeather(data.Key);
-  }).then(data => {
-    console.log(data);
-  }).catch(err => console.log(err));   
-  */
