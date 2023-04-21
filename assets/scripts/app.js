@@ -30,15 +30,18 @@ const updateUI = (data) => {
     const iconSrc = `assets/img/icons/${weather.WeatherIcon}.svg`;
     icon.setAttribute('src', iconSrc);
 
+    // Ternary  const result = condition ? 'value 1' : 'value 2'
 
-    let timeSrc = null;
-    if(weather.IsDayTime){
-        timeSrc = 'assets/img/day.svg';
-    }else{
-        timeSrc = 'assets/img/night.svg';
-    }
-
+    let timeSrc = weather.IsDayTime ? 'assets/img/day.svg' : 'assets/img/night.svg'  ;
     time.setAttribute('src', timeSrc);
+
+    // let timeSrc = null;
+    // if(weather.IsDayTime){
+    //     timeSrc = 'assets/img/day.svg';
+    // }else{
+    //     timeSrc = 'assets/img/night.svg';
+    // }
+    // time.setAttribute('src', timeSrc);
 
 
 
